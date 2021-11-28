@@ -12,3 +12,10 @@ To run the *CNN* model, do the following:
 - While the process runs, it creates two graphs:
     1. **train_loss_mel_cnn.jpg**: training loss vs iteration graph
     2. **genre_wise_accuracy_prediction.jpg**: genre wise accuracy achieved after training
+
+### For MEL-spectogram formation
+Here is the link for the google colab notebook that contains the preprocessing and image formation code: https://colab.research.google.com/drive/11WdI9c6J3hFqAMU_CnDWgzsm8cnuyktR?usp=sharing. This code converts a 30 seconds song into a MEL-spectogram using STFT. The image length is 100 pixels by 150 pixels.
+You will also need access to the GTZAN dataset which is stored in my drive. Here is the link for our MellowD folder: https://drive.google.com/drive/folders/1AOuteJ0NNRGR9ke_bXv9ajvOTSpH8EyB?usp=sharing
+Make sure this MellowD folder is a part of your drive too before running the code.
+- The fourth and fifth cells were just used to visualize the data and the expected output, so they won't run unless you provide the specific files. 
+- Run the rest of the cells in order to produce the output which will be saved in your *MellowD/genres/mel_data folder* in your drive.
