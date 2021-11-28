@@ -107,14 +107,13 @@ def get_loss(X_train, y_train, X_test, y_test):
   return (1/X_test.shape[0])*np.sum(np.square(linear_reg.predict(X_test) - y_test))
 
 def k_fold_cv(k: int, X: np.ndarray, y: np.ndarray):
-   '''
-    This method performs K-fold cross validation on the input samples with labels.
+  '''
+  This method performs K-fold cross validation on the input samples with labels.
     Parameters:
       k (int): Value of K
       X (numpy array): samples
       y (numpy array): expected output/labels
       alpha (float): value of alpha in K-fold cross validation
-    
   '''
   loss = 0
   for i in range(k):
