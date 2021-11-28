@@ -19,3 +19,7 @@ You will also need access to the GTZAN dataset which is stored in my drive. Here
 Make sure this MellowD folder is a part of your drive too before running the code.
 - The fourth and fifth cells were just used to visualize the data and the expected output, so they won't run unless you provide the specific files. 
 - Run the rest of the cells in order to produce the output which will be saved in your *MellowD/genres/mel_data folder* in your drive.
+
+### ANN method
+In this method, we try to predict the genre of a song using ANN of a song. The dataset used is GTZAN. we have used MFCC matrix to convert audio data to matrix.  
+The ANN_Genre.ipynb file has been shared which can be tested. The model has an accuracy of nearly 59% as can be seen through the code. we have split the data into Train, Test by 8 : - 2 split. Then we trained the ANN model, used ’tanh’ activation function and learning rate to be 0.8, maximum iteration as 150. At the hidden layer we used ’softmax’ activation function. Batch size was taken to 64.
